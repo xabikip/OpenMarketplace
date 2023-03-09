@@ -3,12 +3,14 @@
 <p>{{ 'sylius.ui.if_you_have_an_account_sign_in_with_your_email_address'|trans }}.</p>
 
 
-<div class="ui blue inverted center aligned credentials segment">
+<div class="ui secondary center aligned credentials segment">
     <p>Credentials to log in (as vendor):</p>
     <p>username: health@example.com, password: password</p>
     <p>username: camille@example.com, password: password</p>
     <p>username: lisa-comp@example.com, password: password</p>
 </div>
+
+<h4 class="ui hidden divider"></h4>
 
 {{ form_start(form, {'action': path('sylius_shop_login_check'), 'attr': {'class': 'ui loadable form', 'novalidate': 'novalidate'}}) }}
     {% include '@SyliusShop/Login/_form.html.twig' %}
