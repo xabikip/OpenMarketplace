@@ -70,6 +70,7 @@ open_marketplace:
         product_overview: Product overview
         rejected_listing_msg: This product has been rejected
         more: More
+        slug: Slug
         register:
             new_vendors: New vendors
         conversations: Messages

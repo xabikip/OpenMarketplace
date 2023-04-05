@@ -26,6 +26,9 @@ final class VendorEditType extends AbstractResourceType
             ->add('taxIdentifier', TextType::class, [
                 'label' => 'open_marketplace.ui.tax_identifier',
             ])
+            ->add('slug', TextType::class, [
+                'label' => 'open_marketplace.ui.slug',
+            ])
             ->add('phoneNumber', TextType::class, [
                 'label' => 'open_marketplace.ui.phone_number',
             ])
