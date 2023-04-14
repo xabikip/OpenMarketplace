@@ -1,0 +1,12 @@
+<div class="ui stackable grid" {{ sylius_test_html_attribute('product-price-content') }}>
+    <div class="seven wide column">
+        {% if not product.enabledVariants.empty() %}
+            {% include '@SyliusShop/Product/Show/_price.html.twig' %}
+        {% endif %}
+    </div>
+    <div class="nine wide right aligned column">
+        templates/bundles/SyliusShopBundle/Product/Show/_priceWidget.html.twig
+        <span class="ui sub header">{{ product.code }}</span>
+        <span class="ui sub header">Prodktua: {{ dump(product.vendor) }}</span>
+    </div>
+</div>
